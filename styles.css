@@ -3,6 +3,7 @@
 	padding: 20px;
 	text-align:justify;
 	margin:auto;
+	background-color: red;
 }
 .paper{
 	text-align:center;
@@ -23,6 +24,8 @@
 }
 iframe{
 	margin:auto;
+	height: 558px;
+	width:100%;
 }
 .content{
 	text-align:justify;
