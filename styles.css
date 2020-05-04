@@ -1,6 +1,7 @@
 .container{
-	width:900px;
+	width:1200px;
 	padding: 20px;
+	text-align:justify;
 	margin:auto;
 }
 .paper{
@@ -23,4 +24,9 @@ iframe{
 }
 .affiliation, .footnote{
 	font-size:11pt;
+}
+
+td{
+	padding:2px;
+	text-align:left;
 }

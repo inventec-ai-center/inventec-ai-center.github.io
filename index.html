@@ -1,27 +1,43 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>CARL: Controllable Agent with Reinforcement Learning for Quadruped Locomotion</title>
-		<link rel="stylesheet" href="styles.css">
-	</head>
-	<body>
-		<div class="container paper">
-    		<h1 class="title">CARL: Controllable Agent with Reinforcement Learning for Quadruped Locomotion</h1>
-    		<p class="venue"><em>ACM Transactions on Graphics (SIGGRAPH 2020)</em></p>
-    		<p class="authors">Ying-Sheng Luo (1)<sup>*</sup>, Jonathan Hans Soeseno (1)<sup>*</sup>, Trista Pei-Chun Chen (1), Wei-Chao Chen (1,2)</p>
-    		<p class="affiliation">(1) Inventec Corp. &nbsp (2) Skywatch Innovation Inc.</p>
-    		<p class="footnote">*Joint first authors</p>
-    		<div class="video">
-				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/t9CdF_Pl19Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="content">
-				<h2> Abstract </h2>
-				<p class="abstract">Motion synthesis in a dynamic environment has been a long-standing problem for character animation. Methods using motion capture data tend to scale poorly in complex environments because of their larger capturing and labeling requirement. Physics-based controllers are effective in this regard, albeit less controllable. In this paper, we present CARL, a quadruped agent that can be controlled with high-level directives and react naturally to dynamic environments. Starting with an agent that can imitate individual animation clips, we use Generative Adversarial Networks to adapt high-level controls, such as speed and heading, to action distributions that correspond to the original animations. Further fine-tuning through the deep reinforcement learning enables the agent to recover from unseen external perturbations while producing smooth transitions. It then becomes straightforward to create autonomous agents in dynamic environments by adding navigation modules over the entire process. We evaluate our approach by measuring the agent's ability to follow user control and provide a visual analysis of the generated motion to show its effectiveness.</p>
-				[<a href="CARL.pdf">Paper</a>][<a href="https://youtu.be/t9CdF_Pl19Q">Video</a>]
-			</div>
- 		</div><!-- /.container -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<footer>
-		</footer>
-	</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Inventec AI Center</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner col-md-12"> 
+        <h1>Inventec AI Center</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque condimentum eros ac ipsum venenatis, ut auctor nisi bibendum. In dictum blandit libero, quis sodales ligula. Proin sit amet leo mauris. Nulla pharetra, velit non molestie gravida, ligula nunc aliquam eros, ut fringilla neque velit non nunc. Cras accumsan diam eget tortor sollicitudin, sit amet egestas nibh congue. Phasellus at purus in libero convallis hendrerit. In sed tortor dictum, volutpat lorem in, aliquam ipsum. Suspendisse placerat, odio at sollicitudin ultricies, est eros dapibus sem, quis hendrerit odio odio nec nibh. Nam lacus elit, vehicula id ipsum at, auctor accumsan urna. Pellentesque non malesuada lacus. Praesent gravida eros sed massa efficitur consectetur. Nullam tincidunt, ipsum non facilisis tempus, enim ipsum venenatis urna, a pellentesque lorem erat id nulla. Integer consectetur elementum enim, efficitur malesuada nisl convallis vitae. Praesent dignissim, nibh at fermentum ultrices, ligula erat molestie eros, at iaculis mi libero sit amet leo. Nullam a sem accumsan, pharetra felis sit amet, lobortis ex.</p>
+      </div>
+      <div class="projects col-md-12">
+        <h2>Projects and Publications </h2>
+        
+        <table class="col-md-11">
+          <tr>
+              <td><a href="projects/CARL/index.html"><img src="projects/CARL/thumb.jpg" width="200px" height="inherit"></a>
+              <td>
+                <b>CARL: Controllable Agent with Reinforcement Learning for Quadruped Locomotion</b><br>
+                Ying-Sheng Luo<sup>*</sup>, Jonathan Hans Soeseno<sup>*</sup>, Trista Pei-Chun Chen, Wei-Chao Chen (*Joint first authors)</br>
+                <em>ACM Transaction on Graphics (SIGGRAPH 2020)</em></br>
+                [<a href="projects/CARL/index.html">Project page</a>] [<a href="projects/CARL/CARL.pdf">Paper</a>]
+              </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
