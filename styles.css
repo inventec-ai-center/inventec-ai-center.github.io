@@ -7,6 +7,11 @@
 .paper{
 	text-align:center;
 }
+.video{
+	margin-top:30px;
+	margin-bottom:30px;
+	text-align:center;
+}
 .title{
 	font-weight: bold;
 }
@@ -18,6 +23,8 @@
 }
 iframe{
 	margin:auto;
+	height: 558px;
+	width:100%;
 }
 .content{
 	text-align:justify;
