@@ -1,0 +1,25 @@
+.container{
+	width:900px;
+	padding: 20px;
+	margin:auto;
+}
+.paper{
+	text-align:center;
+}
+.title{
+	text-align:center;
+	font-weight: bold;
+}
+.authors{
+	text-align:center;
+	font-size:14pt;
+}
+.abstract{
+	text-align:justify;
+}
+iframe{
+	margin:auto;
+}
+.content{
+	text-align:justify;
+}

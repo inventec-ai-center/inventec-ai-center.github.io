@@ -2,13 +2,25 @@
 <html>
 	<head>
 		<title>CARL: Controllable Agent with Reinforcement Learning for Quadruped Locomotion</title>
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<div class="container">
-    		
-		</div><!-- /.container -->
+		<div class="container paper">
+    		<h1 class="title">CARL: Controllable Agent with Reinforcement Learning for Quadruped Locomotion</h1>
+    		<p class="authors"><em>ACM Transactions on Graphics (SIGGRAPH 2020)</em></p>
+    		<p class="authors">Ying-Sheng Luo (1)<sup>*</sup>, Jonathan Hans Soeseno (1)<sup>*</sup>, Trista Pei-Chun Chen (1), Wei-Chao Chen (1,2) </br> *Joint first authors</p>
+    		<p class="affiliation">(1) Inventec Corp. &nbsp (2) Skywatch Innovation Inc.</p>
+    		<div class="video">
+				<iframe width="800px" height="450px" src="https://www.youtube.com/embed/t9CdF_Pl19Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="content">
+				<h2> Abstract </h2>
+				<p class="abstract">Motion synthesis in a dynamic environment has been a long-standing problem for character animation. Methods using motion capture data tend to scale poorly in complex environments because of their larger capturing and labeling requirement. Physics-based controllers are effective in this regard, albeit less controllable. In this paper, we present CARL, a quadruped agent that can be controlled with high-level directives and react naturally to dynamic environments. Starting with an agent that can imitate individual animation clips, we use Generative Adversarial Networks to adapt high-level controls, such as speed and heading, to action distributions that correspond to the original animations. Further fine-tuning through the deep reinforcement learning enables the agent to recover from unseen external perturbations while producing smooth transitions. It then becomes straightforward to create autonomous agents in dynamic environments by adding navigation modules over the entire process. We evaluate our approach by measuring the agent's ability to follow user control and provide a visual analysis of the generated motion to show its effectiveness.</p>
+				[<a href="CARL.pdf">Paper</a>][<a href="https://youtu.be/t9CdF_Pl19Q">Video</a>]
+			</div>
+ 		</div><!-- /.container -->
+
 		<footer>
-    		
 		</footer>
 	</body>
 </html>
