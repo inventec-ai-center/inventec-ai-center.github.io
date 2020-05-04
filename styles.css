@@ -7,11 +7,9 @@
 	text-align:center;
 }
 .title{
-	text-align:center;
 	font-weight: bold;
 }
-.authors{
-	text-align:center;
+.authors, .venue{
 	font-size:14pt;
 }
 .abstract{
@@ -22,4 +20,7 @@ iframe{
 }
 .content{
 	text-align:justify;
+}
+.affiliation, .footnote{
+	font-size:11pt;
 }
