@@ -1,0 +1,47 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+div {
+    width: 100%;
+}
+
+div a {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    font-size: 2em
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
