@@ -10,20 +10,20 @@
 				<dict>
 					<key>kind</key>
 					<string>software-package</string>
-					<key>url</key>					
+					<key>url</key>
 					<string>https://dl.dropboxusercontent.com/s/dym3tfcn6ueav5f/AI_Wound_iOS.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>display-image</string>
 					<key>url</key>
-					<string>https://ysluo.github.io/image_small.png</string>
+					<string>https://inventec-ai-center.github.io/projects/Skin_Wound/image_small.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
 					<key>url</key>
-					<string>https://ysluo.github.io/image_large.png</string>
+					<string>https://inventec-ai-center.github.io/projects/Skin_Wound/image_large.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
