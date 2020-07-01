@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="centered">       
+    <div class="centered hidden">       
         <h1 style="text-align:center">AI Skin Wound iOS Client APP</h1>
         <p style="text-align:center">(Requires iOS 13.0+, iPhone 7+)</p>
         <a href="itms-services://?action=download-manifest&url=https://inventec-ai-center.github.io/projects/Skin_Wound/manifest.plist">
@@ -18,12 +18,19 @@
         <br>
         <a id="download" href="itms-services://?action=download-manifest&url=https://inventec-ai-center.github.io/projects/Skin_Wound/manifest.plist"> Download</a>
     </div>  
-    <div class="footer">        
+    <div class="footer hidden">        
         <p>Copyright &copy; 2020 Inventec Corp. All Rights Reserved.</p>
     </div>
     <script>
         $(document).ready(function()
         {                                    
+            var token = prompt("Input Access Token");
+            while (token != "inventec") {
+                alert('Incorrect Access Token');
+                token = prompt("input access token");
+            }
+            $("div").removeClass("hidden");
+
             var href = $('#download').attr('href');
             window.location.href = href;
         });
