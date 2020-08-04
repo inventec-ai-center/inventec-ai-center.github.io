@@ -6,10 +6,11 @@
     <title>AI Skin Wound iOS APP</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="centered">       
+    <div class="centered hidden">       
         <h1 style="text-align:center">AI Skin Wound iOS Client APP</h1>
         <p style="text-align:center">(Requires iOS 13.0+, iPhone 7+)</p>
         <a href="itms-services://?action=download-manifest&url=https://inventec-ai-center.github.io/projects/Skin_Wound/manifest.plist">
@@ -18,12 +19,30 @@
         <br>
         <a id="download" href="itms-services://?action=download-manifest&url=https://inventec-ai-center.github.io/projects/Skin_Wound/manifest.plist"> Download</a>
     </div>  
-    <div class="footer">        
+    <div class="footer hidden">        
         <p>Copyright &copy; 2020 Inventec Corp. All Rights Reserved.</p>
     </div>
     <script>
         $(document).ready(function()
-        {                                    
+        {
+            var token = prompt("Input Access Token");
+            var decrypted = '';
+            try {
+                decrypted = CryptoJS.AES.decrypt("U2FsdGVkX18qg0m0MGZUdexbo2GPqICjVYpjo5T1vHClS6rigHjUq+aQjfURtXrUHzkigtDkeqbDHqjdBCPL/8EGBTOkxvgFQjYYmjv+hlmXD3deEnFp0lCKmj6m9NIU", token).toString(CryptoJS.enc.Utf8);        
+            } catch (error) {
+                decrypted = '';
+            }
+            while (decrypted != "vubPURcy0Ob9JJqWhpE4rCDgoKCgoKCgoKCgoKCgoKCmP4Dusfsh4kSLgwAAAAASUVORK5CYII=") {
+                alert('Incorrect Access Token');
+                token = prompt("input access token");
+                try {
+                decrypted = CryptoJS.AES.decrypt("U2FsdGVkX18qg0m0MGZUdexbo2GPqICjVYpjo5T1vHClS6rigHjUq+aQjfURtXrUHzkigtDkeqbDHqjdBCPL/8EGBTOkxvgFQjYYmjv+hlmXD3deEnFp0lCKmj6m9NIU", token).toString(CryptoJS.enc.Utf8);        
+                } catch (error) {
+                    decrypted = '';
+                }                
+            }
+            $("div").removeClass("hidden");
+
             var href = $('#download').attr('href');
             window.location.href = href;
         });
