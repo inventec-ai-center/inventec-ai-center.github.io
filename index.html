@@ -1,79 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+<head>
 
-    <title>Inventec AI Center</title>
-  </head>
-  <body>
-    <div class="container" style="width:1200px">
-      <div class="banner col-md-12"> 
-        <h1><a href="https://inventec-ai-center.github.io/index.html" style="color:black;text-decoration: none">Inventec AI Center</a></h1>
-        <p>Inventec AI Center is tasked with missions to advance the company's smart manufacturing capabilities, as well as to pioneer future AI technologies and products in areas as smart health, smart computing hardware, etc. In smart manufacturing, we've solved the problems of the logistic management process for forecasting parts needed for manufacturing the products, built systems for automatically qualifying products for mass production, and developed novel methodologies for efficiently creating AI models for visual inspection. In pioneering future AI technologies and products, we are investigating smart health for the wellbeing of mankind, smart computing including AI chips, architectures, and infrastructures for the ever-more demanding needs of AI computing.</p>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Inventec - AI Center</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+ <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <div class="mb-1">
+         <img src="img/inventec-logo.png" style="width:230px"/>
       </div>
+      <h1 class="mb-1" style="color:whitesmoke"> AI Center</h1>
+      <!-- <h3 class="mb-5" style="color:whitesmoke">
+        <em>Dream - Envision - Deliver</em>
+      </h3> -->
+    </div>
+    <div class="overlay"></div>
+  </header>
 
-      <!-- Research Highlights -->
-      <div class="highlight col-md-12">
-        <div class="col-md-12 jumbotron" style="padding-top: 25px;padding-bottom: 25px">
-          <div class="content">
-            <h4>  <a href="projects/CARL/index.html" style="text-decoration: none;color:black">CARL: Controllable Agent with Reinforcement Learning for Quadruped Locomotion</a></h4>
-            Ying-Sheng Luo*, Jonathan Hans Soeseno*, Trista Pei-Chun Chen, Wei-Chao Chen (*Joint first authors)</br>
-            <em>ACM Transaction on Graphics (SIGGRAPH 2020)</em></br>
-            <div class="video">
-              <iframe src="https://www.youtube.com/embed/t9CdF_Pl19Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <p class="abstract"><b>Abstract:</b> Motion synthesis in a dynamic environment has been a long-standing problem for character animation. Methods using motion capture data tend to scale poorly in complex environments because of their larger capturing and labeling requirement. Physics-based controllers are effective in this regard, albeit less controllable. In this paper, we present CARL, a quadruped agent that can be controlled with high-level directives and react naturally to dynamic environments. Starting with an agent that can imitate individual animation clips, we use Generative Adversarial Networks to adapt high-level controls, such as speed and heading, to action distributions that correspond to the original animations. Further fine-tuning through the deep reinforcement learning enables the agent to recover from unseen external perturbations while producing smooth transitions. It then becomes straightforward to create autonomous agents in dynamic environments by adding navigation modules over the entire process. We evaluate our approach by measuring the agent's ability to follow user control and provide a visual analysis of the generated motion to show its effectiveness.</p>
-            
-          </div>
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="content-section-heading">
+        <h2 class="mb-5">Who are we?</h2>
+      </div>
+      
+      <p style="text-align: justify;">
+          Inventec AI Center is tasked with missions to advance the company's smart manufacturing capabilities, as well as to pioneer future AI technologies 
+          and products in areas as smart health, smart computing hardware, etc. In smart manufacturing, we've solved the problems of the logistic management
+            process for forecasting parts needed for manufacturing the products, built systems for automatically qualifying products for mass production, and 
+            developed novel methodologies for efficiently creating AI models for visual inspection. In pioneering future AI technologies and products, we are 
+            investigating smart health for the wellbeing of mankind, smart computing including AI chips, architectures, and infrastructures for the ever-more 
+            demanding needs of AI computing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h2 class="mb-5">We are HIRING!</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Android/IOS App Developer</strong>
+          </h4>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pie-chart"></i>
+          </span>
+          <h4>
+            <strong>Project Managers</strong>
+          </h4>          
+        </div>
+        <div class="col-lg-4 col-md-12 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-desktop"></i>
+          </span>
+          <h4>
+            <strong>AI Research Engineers</strong>
+          </h4>          
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- List of interesting projects and publications -->
-      <div class="projects col-md-12">
-        <h2>Projects and Publications </h2>
-        <table class="col-md-11">
-          <tr>
-              <td><a href="projects/CARL/index.html"><img src="projects/CARL/thumb.jpg" width="200px" height="inherit" style="border: 1px solid black;"></a>
-              <td>
-                <b>CARL: Controllable Agent with Reinforcement Learning for Quadruped Locomotion</b><br>
-                Ying-Sheng Luo<sup>*</sup>, Jonathan Hans Soeseno<sup>*</sup>, Trista Pei-Chun Chen, Wei-Chao Chen (*Joint first authors)</br>
-                <em>ACM Transaction on Graphics (SIGGRAPH 2020)</em></br>
-                [<a href="projects/CARL/index.html">Project page</a>] [<a href="projects/CARL/CARL.pdf">Paper</a>]
-              </td>
-          </tr>
-          <tr>
-              <td><a href="projects/GTC_2020_LASA/index.html"><img src="projects/GTC_2020_LASA/thumb.jpg" width="200px" height="inherit" style="border: 1px solid black;"></a>
-              <td>
-                <b>Toward Taming the Training Data Complexity in Smart Manufacturing</b><br>
-                Trista Pei-Chun Chen, Wei-Chao Chen, Yi-Chun Chen, Daniel Stanley Tan</br>
-                <em>NVIDIA GTC 2020</em></br>
-                [<a href="projects/GTC_2020_LASA/index.html">Project page</a>] [<a href="https://developer.nvidia.com/gtc/2020/video/s21324">Talk video</a>] [<a href="projects/GTC_2020_LASA/s21324-toward-taming-the-training-data-complexity-in-smart-manufacturing.pdf">Slides</a>]
-              </td>
-          </tr>
-          <tr>
-              <td><a href="projects/GTC_2019/index.html"><img src="projects/GTC_2019/thumb.jpg" width="200px" height="inherit" style="border: 1px solid black;"></a>
-              <td>
-                <b>Edge AI in Smart Manufacturing: Defect Detection and Beyond</b><br>
-                Trista Pei-Chun Chen, Wei-Chao Chen</br>
-                <em>NVIDIA GTC 2019</em></br>
-                [<a href="projects/GTC_2019/index.html">Project page</a>] [<a href="projects/GTC_2019/s9617-edge-ai-in-smart-manufacturing-defect-detection-and-beyond.mp4">Talk video</a>] [<a href="projects/GTC_2019/S9617_v20190319.pdf">Slides</a>]
-              </td>
-          </tr>
-        </table>
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h2 class="mb-5">Projects and Publications</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">TBA 2020</div>
+                <p class="mb-0">TBA</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="projects/CARL/index.html">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">SIGGRAPH 2020</div>
+                <p class="mb-0">CARL: Controllable Agent with Reinforcement Learning for Quadruped Locomotion</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="projects/carl/thumb.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="projects/GTC_2020_LASA/index.html">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">NVIDIA GTC 2020</div>
+                <p class="mb-0">Toward Taming the Training Data Complexity in Smart Manufacturing</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="projects/GTC_2020_LASA/thumb.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="projects/GTC_2019/index.html">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">NVIDIA GTC 2019</div>
+                <p class="mb-0">Edge AI in Smart Manufacturing: Defect Detection and Beyond</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="projects/GTC_2019/thumb.jpg" alt="">
+          </a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <span>
+        <span class="service-icon rounded-circle mx-auto mb-3">
+          <i class="icon-envelope"></i>
+        </span>
+      <p class="text-center mb-0" style="font-size: x-large;"> aicenter.inventec@gmail.com </p>
+      <p class="text-muted small mb-0">Copyright &copy; Inventec AI Center 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
 </html>

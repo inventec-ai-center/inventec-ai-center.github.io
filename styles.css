@@ -1,8 +1,12 @@
+body{
+	background-color: #bf0603;
+}
 .container{
 	width:1200px;
 	padding: 20px;
 	text-align:justify;
 	margin:auto;
+	background-color: white;
 }
 .paper{
 	text-align:center;
