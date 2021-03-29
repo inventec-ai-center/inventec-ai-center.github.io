@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="centered hidden">       
+    <div class="centered hidden">
         <h1 style="text-align:center">AI Skin Wound iOS Client APP</h1>
         <p style="text-align:center">(Requires iOS 13.0+, iPhone 7+)</p>
         <a href="itms-services://?action=download-manifest&url=https://inventec-ai-center.github.io/projects/Skin_Wound/manifest.plist">
@@ -18,8 +18,8 @@
         </a>
         <br>
         <a id="download" href="itms-services://?action=download-manifest&url=https://inventec-ai-center.github.io/projects/Skin_Wound/manifest.plist"> Download</a>
-    </div>  
-    <div class="footer hidden">        
+    </div>
+    <div class="footer hidden">
         <p>Copyright &copy; 2020 Inventec Corp. All Rights Reserved.</p>
     </div>
     <script>
@@ -28,18 +28,19 @@
             var token = prompt("Input Access Token");
             var decrypted = '';
             try {
-                decrypted = CryptoJS.AES.decrypt("U2FsdGVkX18qg0m0MGZUdexbo2GPqICjVYpjo5T1vHClS6rigHjUq+aQjfURtXrUHzkigtDkeqbDHqjdBCPL/8EGBTOkxvgFQjYYmjv+hlmXD3deEnFp0lCKmj6m9NIU", token).toString(CryptoJS.enc.Utf8);        
+                decrypted = CryptoJS.AES.decrypt("U2FsdGVkX1/BUKaAn7M+W/UWSbKn6WYoT83FFecDwSkdnyQqT5dPXf1TEL26/gm0xJXAFJU0O1cERfVSo7ybY3SCMPCO5ZnfkOmwe/zhu55yJjFUhV0Tv4aBIPSOYcOu", token).toString(CryptoJS.enc.Utf8);
             } catch (error) {
                 decrypted = '';
             }
+            console.log(decrypted)
             while (decrypted != "vubPURcy0Ob9JJqWhpE4rCDgoKCgoKCgoKCgoKCgoKCmP4Dusfsh4kSLgwAAAAASUVORK5CYII=") {
                 alert('Incorrect Access Token');
                 token = prompt("input access token");
                 try {
-                decrypted = CryptoJS.AES.decrypt("U2FsdGVkX18qg0m0MGZUdexbo2GPqICjVYpjo5T1vHClS6rigHjUq+aQjfURtXrUHzkigtDkeqbDHqjdBCPL/8EGBTOkxvgFQjYYmjv+hlmXD3deEnFp0lCKmj6m9NIU", token).toString(CryptoJS.enc.Utf8);        
+                decrypted = CryptoJS.AES.decrypt("U2FsdGVkX1/BUKaAn7M+W/UWSbKn6WYoT83FFecDwSkdnyQqT5dPXf1TEL26/gm0xJXAFJU0O1cERfVSo7ybY3SCMPCO5ZnfkOmwe/zhu55yJjFUhV0Tv4aBIPSOYcOu", token).toString(CryptoJS.enc.Utf8);
                 } catch (error) {
                     decrypted = '';
-                }                
+                }
             }
             $("div").removeClass("hidden");
 
